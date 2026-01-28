@@ -6,59 +6,104 @@
 <title>Anagen Boost</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        background: #f8f8f8;
-        font-family: 'Inter', sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        text-align: center;
-        color: #111;
-    }
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #111;
+}
 
-    .container {
-        max-width: 600px;
-        padding: 40px;
-    }
+.container {
+    max-width: 600px;
+    padding: 40px;
+}
 
-    img {
-        max-width: 220px;
-        margin-bottom: 40px;
-    }
+img {
+    max-width: 300px;
+    margin-bottom: 40px;
+}
 
-    h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 36px;
-        margin-bottom: 15px;
-        letter-spacing: 1px;
-    }
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
 
-    p {
-        font-size: 16px;
-        color: #555;
-        margin-bottom: 10px;
-    }
+.launch {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 30px;
+}
 
-    .subtle {
-        font-size: 14px;
-        color: #888;
-        margin-top: 20px;
-    }
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input[type="email"] {
+    padding: 12px;
+    width: 240px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px 20px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    font-size: 13px;
+    color: #888;
+    margin-top: 40px;
+}
 </style>
 </head>
 <body>
 
 <div class="container">
     <img src="logo.png" alt="Anagen Boost Logo">
-    <h1>Something Beautiful Is Growing</h1>
-    <p>Our website is currently under construction.</p>
-    <p>Check back soon for the official launch.</p>
-    <div class="subtle">© 2026 Anagen Boost</div>
+
+    <div class="launch">Launching Spring 2026</div>
+
+    <h1>Elevated Hair Wellness</h1>
+
+    <p>Be the first to know when Anagen Boost officially launches.</p>
+
+    <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Notify Me</button>
+    </form>
+
+    <div class="footer">© 2026 Anagen Boost</div>
 </div>
 
 </body>
 </html>
-

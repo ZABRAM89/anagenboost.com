@@ -134,14 +134,13 @@ const msg = document.getElementById("msg");
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
     btn.disabled = true;
-    msg.text = "Submitting...";
+    msg.textContent = "Submitting...";
 
     try {
-        const res = await fetch(scriptURL, {
+        await fetch(scriptURL, {
             method: "POST",
+            mode: "no-cors",
             headers: { "Content-Type": "text/plain;charset=utf-8" },
-mode: "no-cors",
-
             body: JSON.stringify({
                 name: nameInput.value.trim(),
                 email: emailInput.value.trim(),
@@ -151,8 +150,7 @@ mode: "no-cors",
         });
 
         msg.textContent = "You're officially on the list. Welcome.";
-form.reset();
-
+        form.reset();
 
     } catch (err) {
         msg.textContent = "Network error. Please try again.";
